@@ -15,7 +15,6 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Navbar />
-			<Footer />
 			<Submenu />
 			<Switch>
 				<Route exact path="/" component={Home} />
@@ -23,6 +22,7 @@ function App() {
 				<Route exact path="/videos" component={Videos} />
 				<Route exact path="/videos/:id" component={VideoDetail} />
 				<Route exact path="/articles/:id" component={Article} />
+				<Footer />
 				<Route component={Error} />
 			</Switch>
 		</BrowserRouter>

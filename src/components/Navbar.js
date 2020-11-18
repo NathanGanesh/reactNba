@@ -3,9 +3,10 @@ import { sublinks } from './context/data';
 import logo from './context/nba_logo.png';
 import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from './context/context';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-	const { openSidebar, openSubmenu, closeSubmenu, isSubmenuOpen } = useGlobalContext();
+	const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
 	const displaySubMenu = (e) => {
 		const pageName = e.target.textContent;
 		const tempBtn = e.target.getBoundingClientRect();
@@ -23,9 +24,11 @@ export default function Navbar() {
 	return (
 		<nav className="main-nav-bar" onMouseOver={handleSubMenu}>
 			<div>
-				<button className="btn nav-bar-logo">
-					<img src={logo} />
-				</button>
+				<Link className="main-link" to={'/home'}>
+					<button className="btn nav-bar-logo">
+						<img src={logo} />
+					</button>
+				</Link>
 			</div>
 			<div>
 				<ul className="nav-bar-items">
