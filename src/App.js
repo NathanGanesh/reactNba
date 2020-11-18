@@ -9,12 +9,14 @@ import Videos from './pages/Videos';
 import Error from './pages/Error';
 import VideoDetail from './pages/VideoDetail';
 import Article from './pages/Article';
+import Submenu from './components/Submenu';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Navbar />
 			<Footer />
+			<Submenu />
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/news" component={News} />
