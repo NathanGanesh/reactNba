@@ -1,1 +1,54 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+body {
+	background: rgba(0, 0, 0, 0.2);
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul,
+li,
+a {
+	list-style: none;
+	text-decoration: none;
+}
+
+.main-nav-bar {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.nav-bar-items {
+	display: flex;
+}
+
+.nav-bar-items li {
+	margin: 0 30px;
+	font-size: 1.8rem;
+}
+.main-link {
+	text-decoration: none;
+	color: black;
+}
